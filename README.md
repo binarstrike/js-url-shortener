@@ -1,2 +1,2 @@
 # ts-url-shortener
- Cuman proyek kecil
+ Cuman proyek kecil dengan fungsi memperpendek url

@@ -1,0 +1,37 @@
+{
+  "name": "ts-url-shortener",
+  "version": "1.0.0",
+  "description": "Cuman proyek kecil dengan fungsi memperpendek url",
+  "main": "dist/index.js",
+  "repository": "https://github.com/binarstrike/ts-url-shortener.git",
+  "author": "Binar Nugroho <binarnugroho775@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "prisma": "^4.13.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@prisma/client": "^4.13.0",
+    "express": "^4.18.2"
+  },
+  "keywords": [
+    "shortener",
+    "url",
+    "api",
+    "express"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "start:prod": "pm2-docker dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "build:js": "tsc --build --verbose",
+    "type-check": "tsc",
+    "type-check:watch": "tsc --watch"
+  }
+}
